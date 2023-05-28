@@ -1,0 +1,17 @@
+:host {
+  width: 50%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .filter-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    & > * {
+      flex: 1;
+    }
+  }
+}

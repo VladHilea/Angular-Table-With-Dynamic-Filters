@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
+@import 'ngx-toastr/toastr';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+//this is from the ag-grid documentation,
+//the use of !important and the value of a row-height dimension in the root styles.css
+//is needed to remove default min-height ( when only one element is present )
+.ag-center-cols-clipper {
+  min-height: 45px !important;
+}

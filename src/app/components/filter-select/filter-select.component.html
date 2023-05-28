@@ -1,0 +1,7 @@
+<ng-select [multiple]="false"
+           [placeholder]="placeholder"
+           [items]="itemList"
+           [(ngModel)]="selectedItem"
+           (change)="onFilterChange()"
+           [searchable] = "false"
+></ng-select>

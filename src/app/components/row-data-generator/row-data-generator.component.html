@@ -1,0 +1,8 @@
+<button class="btn-primary" (click)="toggleGenerateTextarea()">Create new row data</button>
+
+<div *ngIf="showGenerate" class="container-generate-data">
+  <p>Please write your new table data. <br> Each row on a new line. Each line should contain values for A , B , C separated by a comma: <strong>" , "</strong></p>
+  <textarea placeholder="Input your data"
+  [(ngModel)]="textInput"></textarea>
+  <button (click)="handleParsingText()" class="btn-primary">Generate</button>
+</div>

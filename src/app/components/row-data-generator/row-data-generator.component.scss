@@ -1,0 +1,42 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .btn-primary {
+    background: green;
+    color: white;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+    border: 1px solid green;
+    border-radius: 2px;
+
+
+    &:hover {
+      background: white;
+      color: green;
+    }
+  }
+
+  .container-generate-data {
+    background: white;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+      width: 100%;
+      min-height: 200px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 50%;
+      margin: 10px auto;
+    }
+  }
+}
